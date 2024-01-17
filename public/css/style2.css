@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carattere&family=Comfortaa:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fugaz+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800&family=Oleo+Script+Swash+Caps:wght@400;700&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lemon&family=Oleo+Script:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Permanent+Marker&family=Sniglet:wght@400;800&display=swap');
+
+@media only screen and (max-width: 600px) {
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    h1.deskripsi {
+        font-size: 30px !important;
+        margin-top: 25px !important;
+    }
+
+    button.cart-btn {
+        margin-right: 100px !important;
+        border-bottom-right-radius: 0px !important;
+        transition: 0.5s !important;
+        display: inline-block !important;
+        cursor: pointer !important;
+        padding: 10px !important;
+        background-color: #000000 !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 5px !important;
+    }
+
+    img.gambar1 {
+        margin-left: 2rem !important;
+        width: 75% !important;
+        height: 75% !important;
+        -webkit-animation: spin 1s linear infinite;
+        -moz-animation: spin 1s linear infinite;
+        animation: spin 120s linear infinite;
+    }
+
+    h2.teksjudulaplikasi {
+        color: rgb(255, 255, 255) !important;
+        font-family: Permanent Marker !important;
+        font-size: 23px !important;
+        font-weight: 750 !important;
+    }
+
+    p.teksdeskripsiaplikasi {
+        margin-top: 20px !important;
+        color: white !important;
+        font-size: 17px !important;
+    }
+
+    button.btn_food {
+        margin-right: 10px !important;
+        border-radius: 15px !important;
+    }
+
+    img.gambar_icon_food {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .btn.btn-dark.btn-keterangan:hover {
+        transition: 1s;
+        background: linear-gradient(to bottom right, #FFA500, #FF69B4);
+        color: rgb(0, 0, 0);
+        transform: scale(1.2);
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+
+    .like {
+        position: absolute !important;
+        right: 18px !important;
+        top: -53px !important;
+        border: none !important;
+        cursor: pointer !important;
+        border-radius: 20px !important;
+        background-color: rgb(216, 10, 10) !important;
+        transition: background-color 0.3s ease !important;
+        /* Efek transisi untuk perubahan warna */
+    }
+
+    .like:hover {
+        background-color: rgb(142, 29, 29) !important;
+        /* Warna yang diinginkan saat kursor mengarah pada tombol */
+    }
+
+    .card-menu {
+        margin-top: 100px !important;
+    }
+
+    img.gambarfood {
+        width: 75% !important;
+        height: 75% !important;
+        margin-left: 40px !important;
+        margin-top: -150px !important;
+        margin-bottom: 40px !important;
+    }
+
+    h2.judulfood {
+        font-size: 25px !important;
+        font-weight: 800 !important;
+        margin-top: 1px !important;
+    }
+
+    h3.keterangan-food-judul {
+        font-family: Oleo Script Swash Caps !important;
+        font-size: 30px !important;
+        font-weight: 750 !important;
+        color: #000000 !important;
+    }
+
+    p.keterangan-food-deskripsi {
+        margin-top: 20px !important;
+        font-size: 17px !important;
+        color: #000000 !important;
+        margin-bottom: 30px !important;
+    }
+
+    h3.penjelasan-lanjut-judul {
+        font-family: Oleo Script !important;
+        color: #000000 !important;
+        font-size: 30px !important;
+        font-weight: 750 !important;
+    }
+
+    p.penjelasan-lanjut-deskripsi {
+        margin-top: 20px !important;
+        font-size: 17px !important;
+        color: #000000 !important;
+        margin-bottom: 60px !important;
+    }
+
+    button.angka-penjelasan-lanjut {
+        position: absolute;
+        top: -270px !important;
+        left: 195px !important;
+        color: #ffffff !important;
+        background-color: #000000 !important;
+        padding: 20px !important;
+        border-radius: 150px !important;
+        border: 2px solid white !important;
+        animation: float 2s infinite;
+    }
+
+    img.gambarhp {
+        padding-left: 21px;
+    }
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+body {
+    /* touch-action: none; */
+    user-select: none;
+
+    /* Untuk browser tertentu seperti Chrome */
+    zoom: reset !important;
+    text-size-adjust: 100% !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+img.gambar1 {
+    width: 100%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 120s linear infinite;
+}
+
+img.gambarfood {
+    animation: float 2s infinite;
+}
+
+.navbar-toggled {
+    background-color: #fff;
+    /* Ganti dengan warna yang diinginkan */
+}
+
+button.cart-btn {
+    margin-right: 100px;
+    border-bottom-right-radius: 30px !important;
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button.cart-btn:hover {
+    color: #000000;
+    background-color: rgb(255, 166, 0);
+    border: 1px solid orange;
+    transform: scale(1.1);
+}
+
+button.navbar-toggler {
+    background-color: #FFA500;
+}
+
+link {
+    display: none;
+}
+
+h1.deskripsi {
+    font-size: 45px;
+}
+
+.navbar {
+    /* position: fixed; */
+    transition: 0.7s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgb(255, 255, 255);
+    /* Ganti dengan warna latar belakang yang diinginkan saat di-scroll */
+}
+
+.home-img {
+    width: 500px;
+}
+
+.pt-7 {
+    padding-top: 50px;
+}
+
+.btn.btn-light:hover {
+    background: linear-gradient(to bottom left, #FFA500, #FFFF00);
+}
+
+.btn.btn-dark.btn-keterangan:hover {
+    transition: 1s;
+    background: linear-gradient(to bottom right, #FFA500, #FF69B4);
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.btn.btn-dark.btn-aplikasi i {
+    font-size: 25px;
+    margin-right: 0.5rem;
+}
+
+.btn.btn-dark.btn-aplikasi span {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+button.btn.btn-dark.btn-aplikasi {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s ease;
+}
+
+.btn.btn-dark.btn-aplikasi:hover {
+    background: linear-gradient(to right, #FFA500, #FFC0CB);
+}
+
+.btn.btn-dark.btn-aplikasi:active {
+    transform: scale(0.86);
+}
+
+.deskripsi {
+    font-weight: 900;
+}
+
+.btn-like {
+    margin-top: 4px;
+}
+
+.btn.btn-add-to-cart:hover {
+    color: #000000;
+    border: 1px solid orange;
+    background-color: rgb(255, 166, 0);
+}
+
+.card-body .like:hover {
+    background-color: rgb(142, 29, 29);
+
+}
+
+.like {
+    position: absolute;
+    right: 18px;
+    top: 59px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(216, 10, 10);
+    transition: background-color 0.3s ease;
+    /* Efek transisi untuk perubahan warna */
+}
+
+.like:hover {
+    background-color: rgb(142, 29, 29);
+
+    /* Warna yang diinginkan saat kursor mengarah pada tombol */
+}
+
+h2.teksjudulaplikasi {
+    color: rgb(255, 255, 255);
+    font-family: Permanent Marker;
+    font-size: 35px;
+    font-weight: 750;
+}
+
+p.teksdeskripsiaplikasi {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+img.img-penjelasan-lanjut {
+    width: 100%;
+    animation: float 2s infinite;
+}
+
+button.btn-bawah {
+    position: absolute;
+    margin-left: 55rem;
+    margin-top: -50px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000000;
+    outline: none;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    transition: 0.5s;
+    display: inline-block;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    /* Menentukan warna teks agar terlihat jelas di atas latar belakang hitam */
+    padding: 10px 20px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    box-shadow: 0 0 30px #ffffff52;
+    border-radius: 0px;
+    /* Untuk memberikan sudut yang lebih lembut (opsional) */
+    cursor: pointer;
+    /* Jika diinginkan, tambahkan gaya lain sesuai dengan kebutuhan */
+}
+
+button.btn-bawah:hover {
+    color: #000000;
+    transform: scale(1.1);
+    border: 1px solid orange;
+    background: linear-gradient(to right, #ff8c42, #976919);
+}

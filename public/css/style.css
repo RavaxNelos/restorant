@@ -1,0 +1,1056 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carattere&family=Comfortaa:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fugaz+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800&family=Oleo+Script+Swash+Caps:wght@400;700&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+    scroll-behavior: smooth;
+}
+
+.home {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    background: url('../img/blur1.jpg') no-repeat;
+    background-size: cover;
+    height: 730px;
+}
+
+.navbar {
+    position: fixed;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Menyatukan brand dan brandbottom di tengah vertikal */
+    padding: 10px;
+    background: transparent;
+    /* Set initial background color to transparent */
+    transition: background 0.3s ease;
+    /* Add transition for smooth color change */
+    z-index: 1000;
+    /* Ensure the navbar is above other elements */
+}
+
+.navbar.scrolled {
+    width: 100%;
+    height: 70px;
+    background: rgb(255, 255, 255);
+}
+
+
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    /* Menyusun brand dan brandbottom secara vertikal */
+}
+
+.brand {
+    font-weight: bold;
+    font-family: Sofia;
+    margin-top: 5px;
+    margin-left: 75px;
+    font-size: 1.8em;
+}
+
+.brandbottom {
+    font-weight: 550;
+    transform: translate(5px, -10px);
+    color: #000000;
+    margin-left: 75px;
+    font-size: 0.6em;
+}
+
+.cart-btn {
+    position: absolute;
+    /* Adjust the top position as needed */
+    left: 1100px;
+    border-bottom-right-radius: 30px !important;
+    margin-top: 1px;
+    margin-right: 75px;
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.cart-btn:hover {
+    color: #000000;
+    background-color: rgb(255, 166, 0);
+    border: 1px solid orange;
+    transform: scale(1.1);
+}
+
+.deskripsi {
+    font-family: Oleo Script Swash Caps;
+    color: #000000;
+    margin-top: 130px;
+    margin-left: 75px;
+}
+
+.deskripsi h3 {
+    font-family: Oleo Script Swash Caps;
+    width: 400px;
+    font-size: 40px;
+    font-weight: 750;
+}
+
+.gambardeskripsi {
+    transform: translate(-20px, -600px);
+    position: absolute;
+    margin-left: 40rem;
+    margin-top: 40rem;
+}
+
+.gambardeskripsi img {
+    width: 110%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 120s linear infinite;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.makanan-btn {
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 75px;
+    display: flex;
+}
+
+.makanan-btn button {
+    background-color: #ffffff;
+    margin-right: 10px;
+    /* Menambahkan jarak antar button */
+    border: none;
+    /* Menghapus border pada button */
+    border-radius: 15px;
+}
+
+
+.makanan-btn img {
+    background-color: #ffffff;
+    width: 50px;
+    font-size: 30px;
+    /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    /* Berikan margin untuk memisahkan ikon-ikon */
+    /* Sesuaikan warna ikon sesuai kebutuhan */
+    border: none;
+    /* Tambahkan border pada ikon */
+    padding: 10px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 15px;
+}
+
+.makanan-btn img:hover {
+    background-color: orange;
+}
+
+.makanan-btn button:hover {
+    background-color: orange;
+}
+
+.keterangan {
+    margin-left: 75px;
+    margin-top: 65px;
+}
+
+.keterangan .black-button {
+    border: 1px solid #000000;
+    outline: none;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    transition: 0.5s;
+    display: inline-block;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    /* Menentukan warna teks agar terlihat jelas di atas latar belakang hitam */
+    padding: 10px 20px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    box-shadow: 0 0 30px #ffffff52;
+    border-radius: 0px;
+    /* Untuk memberikan sudut yang lebih lembut (opsional) */
+    cursor: pointer;
+    /* Jika diinginkan, tambahkan gaya lain sesuai dengan kebutuhan */
+    position: relative;
+}
+
+.keterangan .black-button:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    border: 1px solid orange;
+    background: linear-gradient(to right, #ff8c42, #ff6060);
+}
+
+.shop {
+    background: url('../img/blur2.jpg') no-repeat;
+    background-size: cover;
+    height: 730px;
+}
+
+.bodyaksenkanan {
+    transform: translateY(-300px);
+    margin-left: 900px;
+}
+
+.bodyaksenkanan img {
+    position: absolute;
+    width: 500px;
+}
+
+.product-container {
+    margin-left: 70px;
+    display: flex;
+    justify-content: flex-start;
+    /* Mengatur produk menuju kiri */
+    flex-wrap: wrap;
+}
+
+.product-card {
+    transform: translateY(20px);
+    width: 300px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    overflow: visible;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    /* margin-right: 110px; */
+    transform: translateY(-170px);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-image img {
+    width: 100%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 100s linear infinite;
+}
+
+.product-details {
+    transform: translateY(-250px);
+    padding: 20px;
+}
+
+.product-details h2 {
+    width: 200px;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.product-details .like {
+    background-color: rgb(121, 223, 117);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transform: translate(230px, -55px);
+}
+
+.product-details .like:hover {
+    background-color: #ff0000;
+}
+
+.product-details .like .btn-like {
+    transform: translateY(4px);
+}
+
+.product-details .like.clicked .btn-like {
+    color: orange;
+}
+
+.product-details p {
+    transform: translateY(-30px);
+    width: 250px;
+}
+
+.price {
+    transform: translateY(-30px);
+    font-weight: 800;
+    display: block;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.penjelasan-makanan {
+    transform: translateY(-140px);
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 45rem;
+}
+
+.penjelasan-makanan h3 {
+    font-family: Oleo Script Swash Caps;
+    width: 400px;
+    font-size: 35px;
+    font-weight: 750;
+}
+
+.penjelasan-makanan p {
+    margin-top: 30px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.btn.btn-add-to-cart {
+    transform: translate(19px, -80px);
+    border-bottom-right-radius: 35px !important;
+    margin-left: 13rem;
+}
+
+.btn.btn-add-to-cart:hover {
+    color: #000000;
+    border: 1px solid orange;
+    background-color: rgb(255, 166, 0);
+}
+
+.shop2 {
+    background: url('../img/blur3.jpg') no-repeat;
+    background-size: cover;
+    height: 730px;
+}
+
+.penjelasan-lanjut {
+    transform: translateY(-250px);
+    width: 700px;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+
+.penjelasan-lanjut h3 {
+    font-family: Comfortaa;
+    margin-left: 50px;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 750;
+}
+
+.penjelasan-lanjut p {
+    margin-top: 25px;
+    margin-left: 50px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.gambarsupindonesia {
+    transform: translate(40px, -120px);
+    position: absolute;
+    margin-left: 40rem;
+    margin-top: 0rem;
+}
+
+.gambarsupindonesia img {
+    width: 1000%;
+    height: 140%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 110s linear infinite;
+}
+
+.angkashop {
+    margin-top: -1rem;
+    margin-left: 68rem;
+    position: absolute;
+}
+
+.angkashop .angka-button {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 150px;
+    border: 2px solid white;
+}
+
+.hpdesainweb {
+    position: absolute;
+    transform: translate(50px, -125px);
+    width: 310px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    overflow: visible;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hpdesainweb .cart-btn-hp {
+    position: absolute;
+    /* Adjust the top position as needed */
+    left: 273px;
+    border-bottom-right-radius: 27px !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 7px !important;
+    margin-top: 5px;
+    margin-right: 75px;
+    transition: 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.hpdesainweb .cart-btn-hp:hover {
+    color: #000000;
+    background-color: rgb(255, 166, 0);
+    border: 1px solid orange;
+}
+
+.hpdesainweb .card-menu-hp {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.hpdesainweb .card-menu-hp i {
+    font-size: 30px;
+}
+
+.hpdesainweb .keterangan-di-hp {
+    margin-left: 25px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+}
+
+.hpdesainweb .makanan-btn-hp {
+    cursor: pointer;
+    margin-top: 1px;
+    margin-left: 25px;
+    display: flex;
+}
+
+.hpdesainweb .makanan-btn-hp button {
+    background-color: #ffffff;
+    margin-right: 20px;
+    /* Menambahkan jarak antar button */
+    border: none;
+    /* Menghapus border pada button */
+    border-radius: 30px;
+}
+
+.hpdesainweb .makanan-btn-hp img {
+    background-color: #ffffff;
+    width: 40px;
+    font-size: 30px;
+    /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    /* Berikan margin untuk memisahkan ikon-ikon */
+    /* Sesuaikan warna ikon sesuai kebutuhan */
+    border: none;
+    /* Tambahkan border pada ikon */
+    padding: 10px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    border-radius: 30px;
+}
+
+.hpdesainweb .keteranganbottom-di-hp {
+    margin-left: 25px;
+    color: #000000;
+}
+
+.hpdesainweb-image-card {
+    transform: translateY(20px);
+    width: 150px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    overflow: visible;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-kiri {
+    display: block;
+    transform: translateY(-70px);
+}
+
+.img-kiri img {
+    width: 100%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 100s linear infinite;
+}
+
+.details-hpdesainweb {
+    transform: translateY(-100px);
+}
+
+.details-hpdesainweb h2 {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.details-hpdesainweb p {
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+.details-hpdesainweb .price-hp {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.details-hpdesainweb .like {
+    background-color: rgb(121, 223, 117);
+    border: none;
+    border-radius: 20px;
+    transform: translate(40px, 1px);
+}
+
+.details-hpdesainweb .like .btn-like {
+    transform: translateY(2px);
+}
+
+.hpdesainweb-image-card-kanan {
+    transform: translate(160px, -200px);
+    width: 150px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    overflow: visible;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-kanan {
+    display: block;
+    transform: translateY(-70px);
+}
+
+.img-kanan img {
+    width: 100%;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 100s linear infinite;
+}
+
+.details-hpdesainweb-kanan {
+    transform: translateY(-100px);
+}
+
+.details-hpdesainweb-kanan h2 {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.details-hpdesainweb-kanan p {
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+.details-hpdesainweb-kanan .price-hp {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.details-hpdesainweb-kanan .like {
+    background-color: rgb(121, 223, 117);
+    border: none;
+    border-radius: 20px;
+    transform: translate(40px, 1px);
+}
+
+.details-hpdesainweb-kanan .like .btn-like {
+    transform: translateY(2px);
+}
+
+
+.hpdesainweb-image-card-bawah {
+    transform: translateY(-200px);
+    width: 270px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    overflow: visible;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-bawah {
+    display: block;
+    transform: translateY(-60px);
+}
+
+.img-bawah img {
+    width: 70%;
+    margin-left: 140px;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 100s linear infinite;
+}
+
+.details-hpdesainweb-bawah {
+    transform: translateY(-220px);
+}
+
+.details-hpdesainweb-bawah h2 {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.details-hpdesainweb-bawah p {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 10px;
+}
+
+.details-hpdesainweb-bawah .price-hp {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.details-hpdesainweb-bawah .like {
+    background-color: rgb(121, 223, 117);
+    border: none;
+    border-radius: 20px;
+    transform: translate(70px, 1px);
+}
+
+.details-hpdesainweb-bawah .like .btn-like {
+    transform: translateY(2px);
+}
+
+.black-btn-interface {
+    position: relative;
+    margin-top: -190px;
+    margin-left: 35px;
+    display: flex;
+}
+
+.black-btn-interface .black-button-interface {
+    border: 1px solid #000000;
+    outline: none;
+    width: 240px;
+    height: 50px;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    transition: 0.5s;
+    display: inline-block;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    /* Menentukan warna teks agar terlihat jelas di atas latar belakang hitam */
+    padding: 10px 20px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    box-shadow: 0 0 30px #ffffff52;
+    border-radius: 0px;
+    /* Untuk memberikan sudut yang lebih lembut (opsional) */
+    cursor: pointer;
+    /* Jika diinginkan, tambahkan gaya lain sesuai dengan kebutuhan */
+    position: relative;
+}
+
+.black-btn-interface .black-button-interface i {
+    margin-left: 1px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.card-hp {
+    position: absolute;
+    transform: translate(400px, -125px);
+    width: 310px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 30px;
+    overflow: visible;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-hp-image {
+    /* margin-right: 110px; */
+    transform: translate(-69px, -100px);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-hp-image img {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 100s linear infinite;
+}
+
+.card-hp-details {
+    transform: translateY(-250px);
+    padding: 20px;
+}
+
+.card-hp-arrow {
+    position: absolute;
+    transform: translate(-70px, -320px);
+}
+
+.card-hp-arrow i {
+    font-size: 25px;
+}
+
+.card-hp-menu {
+    position: absolute;
+    transform: translate(240px, -310px);
+}
+
+.card-hp-menu i {
+    font-size: 25px;
+}
+
+.card-hp-time {
+    position: absolute;
+    transform: translateY(20px);
+}
+
+.card-hp-details i {
+    transform: translate(65px, 20px);
+}
+
+.card-hp-details h2 {
+    transform: translateY(30px);
+    width: 200px;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.card-hp-details .like {
+    background-color: rgb(121, 223, 117);
+    border: none;
+    border-radius: 20px;
+    transform: translate(220px, -5px);
+}
+
+.card-hp-details .like:hover {
+    background-color: #ff0000;
+}
+
+.card-hp-details .like .btn-like {
+    transform: translateY(3px);
+}
+
+.card-hp-details p {
+    transform: translateY(10px);
+    width: 250px;
+}
+
+.card-hp-title-price {
+    transform: translateY(10px);
+    position: absolute;
+    font-weight: bold;
+}
+
+.card-hp-price {
+    transform: translateY(25px);
+    font-weight: 800;
+    display: block;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.button-cart {
+    transform: translate(180px, -40px);
+    border: 1px solid #000000;
+    outline: none;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    transition: 0.5s;
+    display: inline-block;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    /* Menentukan warna teks agar terlihat jelas di atas latar belakang hitam */
+    padding: 10px 20px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    box-shadow: 0 0 30px #ffffff52;
+    border-radius: 0px;
+    /* Untuk memberikan sudut yang lebih lembut (opsional) */
+    cursor: pointer;
+    /* Jika diinginkan, tambahkan gaya lain sesuai dengan kebutuhan */
+    position: relative;
+}
+
+.button-cart:hover {
+    color: #000000;
+    border: 1px solid orange;
+    background: linear-gradient(to right, #ff8c42, #ffd100);
+}
+
+
+
+.keterangan-aplikasi {
+    transform: translate(160px, -100px);
+    color: #000000;
+    position: absolute;
+    margin-top: 11rem;
+    margin-left: 40rem;
+}
+
+.keterangan-aplikasi h2 {
+    width: 440px;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 750;
+}
+
+.keterangan-aplikasi p {
+    margin-top: 20px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.btn.btn-aplikasi {
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.btn.btn-aplikasi:hover {
+    background: linear-gradient(to right, #ff8c42, #b30000);
+}
+
+.btn.btn.btn-aplikasi span {
+    align-items: center;
+}
+
+.aplikasi i {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.aplikasi img {
+    transform: translateX(10px);
+    width: 50%;
+    height: 100%;
+}
+
+.aplikasi span {
+    font-family: Poppins;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.penjelasan-bawah {
+    margin-left: 75px;
+    color: #000000;
+    transform: translateY(670px);
+}
+
+.penjelasan-bawah h3 {
+    font-family: Oleo Script Swash Caps;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 750;
+}
+
+.keterangan-bawah {
+    transform: translateY(-55px);
+    margin-left: 51.4rem;
+}
+
+.keterangan-bawah .btn-bawah {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000000;
+    outline: none;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    transition: 0.5s;
+    display: inline-block;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    /* Menentukan warna teks agar terlihat jelas di atas latar belakang hitam */
+    padding: 10px 20px;
+    /* Sesuaikan padding sesuai kebutuhan */
+    box-shadow: 0 0 30px #ffffff52;
+    border-radius: 0px;
+    /* Untuk memberikan sudut yang lebih lembut (opsional) */
+    cursor: pointer;
+    /* Jika diinginkan, tambahkan gaya lain sesuai dengan kebutuhan */
+}
+
+.keterangan-bawah .btn-bawah:hover {
+    color: #000000;
+    transform: scale(1.1);
+    border: 1px solid orange;
+    background: linear-gradient(to right, #ff8c42, #ff0000);
+}
+
+.footeraksenkanan {
+    margin-left: 66rem;
+    margin-top: 32rem;
+}
+
+.footeraksenkanan img {
+    width: 300px;
+    position: absolute;
+}
+
+.footer-bg {
+    background: url('../img/blur4.jpg') no-repeat;
+    background-size: cover;
+    height: 700px
+}
+
+.footer {
+    margin: 0;
+}
+
+.footer p {
+    color: #ffffff;
+    width: 1000px;
+    font-size: 20px;
+    transform: translateY(270px);
+    margin-left: 75px;
+}
+
+.brandbawah {
+    /* margin-top: 10rem; */
+}
+
+.brand-bawah {
+    transform: translateY(60px);
+    color: #000000;
+    font-weight: bold;
+    font-family: Sofia;
+    /* margin-top: 50px; */
+    margin-left: 75px;
+    font-size: 4em;
+}
+
+.brand-bawahbottom {
+    transform: translate(10px, 40px);
+    font-weight: 550;
+    color: #000000;
+    margin-left: 75px;
+    font-size: 15px;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+    color: #000000;
+    margin-left: 75px;
+}
+
+.footer-menu-group {
+    transform: translateY(250px);
+}
+
+.footer-menu-group h4 {
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 750;
+}
+
+.footer-menu-group ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu-group ul li {
+    /* Gaya tambahan sesuai kebutuhan */
+    margin-bottom: 10px;
+}
+
+.footeraksenkiri {
+    margin-left: -10px;
+    margin-top: 12rem;
+}
+
+.footeraksenkiri img {
+    width: 100px;
+    position: absolute;
+}
+
+.footeraksenkiriapel {
+    margin-left: 80px;
+    margin-top: -12rem;
+}
+
+.footeraksenkiriapel img {
+    width: 80px;
+    position: absolute;
+}
+
+.btn-arrow-atas {
+    /* margin-left: 60rem; */
+    position: fixed;
+    bottom: 44px;
+    right: 41px;
+    display: none;
+}
+
+.btn-arrow-atas i {
+    font-size: 30px;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+/* responsive */
+@media(max-width: 767px) {
+    .footer {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer {
+        width: 100%;
+    }
+}
