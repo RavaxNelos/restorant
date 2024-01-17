@@ -41,7 +41,7 @@
         <div class="container px-4">
             <div class="row align-items-center g-5 px-3">
                 <div class="col-12 col-lg-6" style="margin-top: 5rem;">
-                    <h1 class="deskripsi" style="font-family: Oleo Script Swash Caps;color: #000000;margin-top: -1rem;font-weight: 750;">Penyajian makanan daging dan sup disini</h1>
+                    <h1 class="deskripsi" style="font-family: Oleo Script Swash Caps;color: #000000;margin-top: -1rem;font-weight: 750;">Penyajian makanan daging dan sup disana</h1>
                     <div class="mt-5" style="margin-left: 1rem;">
                         <button type="button" class="btn btn-light btn_food" style="margin-right: 10px; border-radius: 15px;"><img src="img/pizza3.png" class="gambar_icon_food" style="width: 35px; height: 35px;"></button>
                         <button type="button" class="btn btn-light btn_food" style="margin-right: 10px; border-radius: 15px;"><img src="img/pizza 2.png" class="gambar_icon_food" style="width: 35px; height: 35px;"></button>

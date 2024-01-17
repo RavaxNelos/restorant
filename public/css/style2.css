@@ -25,6 +25,13 @@
         border-radius: 5px !important;
     }
 
+    button.cart-btn:hover {
+        color: #000000 !important;
+        background-color: rgb(255, 166, 0) !important;
+        border: 1px solid orange !important;
+        transform: scale(1.1) !important;
+    }
+
     img.gambar1 {
         margin-left: 2rem !important;
         width: 75% !important;
