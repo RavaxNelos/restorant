@@ -39,7 +39,7 @@
         </div>
     </nav>
 
-    <h1> Hello World</h1>
+    
     <div class="min-vh-100 pt-7 w-100" style="background: url('img/blur1.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
         <div class="container px-4">
             <div class="row align-items-center g-5 px-3">
