@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/mas-vino', function () {
-//     return view('home');
-// });
+Route::get('/mas-vino', function () {
+    return view('home');
+});
 
 Route::get('/', function () {
     return view('home-2');
